@@ -26,17 +26,18 @@ buttonSubmit.addEventListener(
         let theRandomNumber = randomNumber();
         let theSum = sumOfValues(userNumber, theRandomNumber);
 
+        let message = document.querySelector(".mess").innerHTML = `Hai inserito ${userNumber} e il pc ha inserito ${theRandomNumber}. La somma è ${theSum}. Tu hai scelto "${userSelection}" quindi:`
+
 
         if (isEven(theSum) && (userSelection == "even")) {
-            let message = document.querySelector(".mess").innerHTML = "Hai vinto"
+            let message = document.querySelector(".mess").innerHTML += " Hai vinto!"
         }
         if (!isEven(theSum) && (userSelection == "odd")) {
-            let message = document.querySelector(".mess").innerHTML = "Hai vinto"
+            let message = document.querySelector(".mess").innerHTML += " Hai vinto!"
         } else {
-            let message = document.querySelector(".mess").innerHTML = "Hai perso"
+            let message = document.querySelector(".mess").innerHTML += " Hai perso!"
 
         }
-
 
     }
 )
