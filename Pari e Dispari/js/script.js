@@ -2,7 +2,6 @@
 const buttonSubmit = document.querySelector(".submit-button");
 let userNumber = parseInt(document.querySelector(".number"));
 let userSelection = document.querySelector("#odd-even");
-let userMess = document.querySelector(".number-current");
 
 // Preparo il numero randomico del concorrente computer
 
