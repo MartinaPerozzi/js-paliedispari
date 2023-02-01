@@ -21,14 +21,15 @@
 </head>
 
 <body>
-	<div class="container-fluid">
+	<div class="container-fluid p-5">
+		<h2>Scegli un numero</h2>
 
 		<select name="odd-or-even" id="odd-even">
 			<option value="odd">Dispari</option>
 			<option value="even">Pari</option>
 		</select>
 
-		<input class="number" type="number" placeholder="Numero">
+		<input class="number" type="number" placeholder="Numero" min="1" max="5">
 
 		<input class="btn btn-primary rounded-pill submit-button" type="button" value="SEND">
 

@@ -6,7 +6,7 @@ let userSelection = document.querySelector("#odd-even");
 // Preparo il numero randomico del concorrente computer
 
 function randomNumber() {
-    let numberPc = Math.floor(Math.random() * 5 - 1) + 1;
+    let numberPc = Math.floor(Math.random() * 5) + 1;
     return numberPc;
 }
 
@@ -33,7 +33,7 @@ buttonSubmit.addEventListener(
         }
         if (!isEven(theSum) && (userSelection == "odd")) {
             let message = document.querySelector(".mess").innerHTML += " Hai vinto!"
-        } else {
+        } else if ((isEven(theSum) && (userSelection == "odd")) || (!isEven(theSum) && (userSelection == "even"))) {
             let message = document.querySelector(".mess").innerHTML += " Hai perso!"
 
         }
